@@ -1,0 +1,102 @@
+<!--
+    Developed by: A12.2018.06025 | Muhammad Zaidan A
+-->
+
+<html>
+    <head>
+        <title>
+            Latihan JavaScript
+        </title>
+        <style type="text/css">
+            .maintable {            
+            width: 50%;
+            height: 50%;
+            }
+
+            .sectable {            
+            width: 50%;
+            height: 12%;
+            margin-top: 20px;
+            }
+
+            .submitbtn {
+            margin-left: 30%;
+            }
+
+            .resulta {
+            text-align: center;
+            text-decoration-style: solid;
+            width: 25%;
+            }
+
+            .result {
+            text-align: center;
+            text-decoration-style: solid;
+            width: 15%;
+            }            
+
+            .results {
+            text-align: center;
+            text-decoration-style: solid;
+            width: 35%;
+            }   
+
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="latihanjavascript.js"></script>
+        <form name="fnilai">
+            <table border="0" align="center" class="maintable">
+                <tr>
+                    <td width="25%">NIM</td>
+                    <td>
+                        <select id="nim" onchange="identitas()" onchange="xsubnim()" onchange="xsubnama()">
+                            <option value="Muh. Amin">A12.2018.12345</option>
+                            <option value="Sekiro">A12.2018.12346</option>
+                            <option value="Suraishin">A12.2018.12347</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" disabled id="nama"></td>
+                </tr>
+                <tr>
+                    <td>Nilai Tugas</td>
+                    <td><input type="number" id="ntgs" name="ntgs" onkeyup="sum()" min="0" max="100" placeholder="Nilai Tugas Anda"></td>
+                </tr>
+                <tr>
+                    <td>Nilai UTS</td>
+                    <td><input type="number" id="nuts" name="nuts" onkeyup="sum()" min="0" max="100" placeholder="Nilai UTS Anda"></td>
+                </tr>
+                <tr>
+                    <td>Nilai UAS</td>
+                    <td><input type="number" id="nuas" name="nuas" onkeyup="sum()" min="0" max="100" placeholder="Nilai UAS Anda"></td>
+                </tr>
+                <tr>
+                    <td>Nilai Akhir</td>
+                    <td><input type="text" disabled id="nakhir" value=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Simpan" class="submitbtn" onclick="alert('Data Berhasil Disimpan!')">
+                    </td>
+                </tr>
+            </table>
+            <table border="2" align="center" class="sectable">
+                <tr height="50%">
+                    <td class="resulta">NIM</td>
+                    <td class="resulta">Nama</td>
+                    <td class="result">Nilai Akhir</td>
+                    <td class="results">Status</td>
+                </tr>
+                <tr height="50%">
+                    <td class="resulta"><input type="text" disabled id="subnim"> </td>
+                    <td class="resulta"><input type="text" disabled id="subnama"></td>
+                    <td class="result"><input type="text" disabled id="subnilai"></td>
+                    <td class="results"><input type="text" disabled id="subresult"></td>
+                </tr>
+            </table>
+        </form>        
+    </body>
+</html>
