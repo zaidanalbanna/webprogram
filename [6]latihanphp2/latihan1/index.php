@@ -15,9 +15,9 @@
                     <td>Prodi</td>
                     <td>:</td>
                     <td><select name="prodi">
-                            <option value="TI">S1 Teknik Informatika</option>
-                            <option value="SI">S1 Sistem Informasi</option>
-                            <option value="DTI">D3 Teknik Informatika</option>
+                            <option value="S1 Teknik Informatika">S1 Teknik Informatika</option>
+                            <option value="S1 Sistem Informasi">S1 Sistem Informasi</option>
+                            <option value="D3 Teknik Informatika">D3 Teknik Informatika</option>
                     </td>
                 <tr>
                 <tr>
