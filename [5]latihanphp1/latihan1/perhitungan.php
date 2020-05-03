@@ -33,7 +33,7 @@
             }
         ?>
 
-        <form action="index.php" method="post">
+        <form action="perhitungan.php" method="post">
             <input type="text" name="bil1" placeholder="Angka Pertama">
             <br>
             <input type="text" name="bil2" placeholder="Angka Kedua">
